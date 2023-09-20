@@ -29,9 +29,11 @@ new THREE.TextureLoader().load("./hdr/fondoRedu.png", function (texture) {
 
 //--------Aqui agregamos la cantidad necesaria de anclas
 const ancla1 = mindarThree.addAnchor(0);
+const ancla2 = mindarThree.addAnchor(1);
 
 //----- Cargamos los modelos
 cargarModelo("./modelo/tigreZ2.glb", ancla1, 1.5);
+cargarModelo("./modelo/tigreZ2.glb", ancla2, 1.5);
 
 const start = async () => {
   await mindarThree.start();
