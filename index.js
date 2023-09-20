@@ -14,7 +14,7 @@ var clock = new THREE.Clock();
 
 const mindarThree = new MindARThree({
   container: document.querySelector("#container"),
-  imageTargetSrc: "./targets/targets.mind", //nombre del archivo
+  imageTargetSrc: "./targets/targets_jaguar.mind", //nombre del archivo
 });
 const { renderer, scene, camera } = mindarThree;
 
@@ -31,7 +31,7 @@ new THREE.TextureLoader().load("./hdr/fondoRedu.png", function (texture) {
 const ancla1 = mindarThree.addAnchor(0);
 
 //----- Cargamos los modelos
-cargarModelo("./modelo/tigreZ.glb", ancla1, 1.5);
+cargarModelo("./modelo/tigreZ2.glb", ancla1, 1.5);
 
 const start = async () => {
   await mindarThree.start();
