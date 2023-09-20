@@ -14,7 +14,7 @@ var clock = new THREE.Clock();
 
 const mindarThree = new MindARThree({
   container: document.querySelector("#container"),
-  imageTargetSrc: "./targets/targets_jaguar.mind", //nombre del archivo
+  imageTargetSrc: "./targets/targets_jaguar2.mind", //nombre del archivo
 });
 const { renderer, scene, camera } = mindarThree;
 
